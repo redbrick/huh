@@ -1,0 +1,66 @@
+
+
+
+huh(1)        DCUNS (Redbrick) System Documentation        huh(1)
+
+
+NNAAMMEE
+       huh - retrieve message logs
+
+SSYYNNOOPPSSIISS
+       hhuuhh [ -b ] [ num ]
+
+DDEESSCCRRIIPPTTIIOONN
+       hhuuhh  allows you to find out who the last people to message
+       you were. Usefull when you've missed a hey (1).
+
+OOPPTTIIOONNSS
+       -b     If a message was above 25 lines it is classed as  a
+              screenbomb,  you  will  need  to use this option to
+              retrive log information about screenbombs.
+
+       num    Show log information on last <num> messages.
+
+FFIILLEESS
+       /var/log/local3.log
+
+       /var/log/write_bomb.log
+
+BBUUGGSS
+       Logs are rotated regularly so you can only see  a  limited
+       number  of  message  logs.   If  messages with similar log
+       entries (same number of lines, same recip/dest) were  sent
+       without  any  intervening  messages  only one such message
+       will be logged.
+
+SSEEEE AALLSSOO
+       hheeyy(1), mmeessgg(1), wwrriittee(1),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                           24 Feb 2001                          1
+
+

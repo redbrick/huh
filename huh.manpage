@@ -1,0 +1,28 @@
+.TH huh 1 "24 Feb 2001" "" "DCUNS (Redbrick) System Documentation"
+.SH NAME
+huh \- retrieve message logs
+.SH SYNOPSIS
+.BR huh
+[ -b ] [ num ]
+.SH DESCRIPTION
+.B huh
+allows you to find out who the last people to message you were. Usefull when you've
+missed a hey (1).
+.SH OPTIONS
+.IP \-b 
+If a message was above 25 lines it is classed as a screenbomb, you will
+need to use this option to retrive log information about screenbombs.
+.IP num
+Show log information on last <num> messages.
+.SH FILES
+/var/log/local3.log
+.PP
+/var/log/write_bomb.log
+.SH BUGS
+Logs are rotated regularly so you can only see a limited number of message logs.
+If messages with similar log entries (same number of lines, same recip/dest) were sent without any intervening messages only one such message will be logged.
+.SH "SEE ALSO"
+.BR hey (1),
+.BR mesg (1),
+.BR write (1)
+.PP
